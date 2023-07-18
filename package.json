@@ -1,0 +1,16 @@
+{
+  "name": "Snippet",
+  "version": "1.0.0",
+  "description": "TS snippets for Edu",
+  "main": "index.js",
+  "author": "Faeztgh",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "ts-toolbelt": "^9.6.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15"
+  }
+}
