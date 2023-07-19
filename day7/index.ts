@@ -26,3 +26,5 @@ const obj: Union.Merge<QueryParams> = {
     b: "bye",
     c: "key",
 };
+
+console.log(obj);
