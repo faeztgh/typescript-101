@@ -47,7 +47,7 @@ export const Button2 = (props: ButtonProps) => {
 const Main2 = () => {
     return (
         <>
-            <Button size=""></Button>
+            <Button size="sm"></Button>
             <Button size="some other string"></Button>
         </>
     );

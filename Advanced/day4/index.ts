@@ -1,12 +1,10 @@
 /********************************  Overload and Generic ********************************/
 export function myFunction(input: string): string;
 export function myFunction(input: number): number;
-
 /**
- *
+ * Overloads
  * @param input
  * @returns number|string
- * Overloads
  */
 export function myFunction(input: unknown): unknown {
     return input;
@@ -17,16 +15,15 @@ const overloadStringRes = myFunction("");
 const overloadUnknownRes = myFunction([]);
 
 /**
- *
+ * Generics
  * @param input
  * @returns T
- * Generics
  */
 export function myGenericFunction<T>(input: T): T {
     return input;
 }
 
-const genericStringRes = myGenericFunction("");
-const genericNumberRes = myGenericFunction(5);
-const genericArrayRes = myGenericFunction([]);
-const genericObjectRes = myGenericFunction({});
+const genericStringRes = myGenericFunction<string>("");
+const genericNumberRes = myGenericFunction<number>(5);
+const genericArrayRes = myGenericFunction<Array<unknown>>([]);
+const genericObjectRes = myGenericFunction<object>({});
