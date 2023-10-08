@@ -2,7 +2,7 @@
 
 import { String, Union } from "ts-toolbelt";
 
-const query = `/home?a=hello&b=bye&c=key`;
+const query = `/home?a=hello&b=bye&c=key&name=foad`;
 
 type Query = typeof query;
 
@@ -25,6 +25,7 @@ const obj: Union.Merge<QueryParams> = {
     a: "hello",
     b: "bye",
     c: "key",
+    name: "foad",
 };
 
 console.log(obj);

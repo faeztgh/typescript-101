@@ -9,11 +9,13 @@ const person: IDynamic<string | number> = {
     name: "Jane",
     age: 30,
     gender: "female",
+    // isAdmin: true,
 };
 
-const animal: IDynamic<string | number | typeof person> = {
+const animal: IDynamic<string | number | typeof person | boolean> = {
     name: "Stacy",
     age: 5,
     bread: "dog",
     owner: person,
+    isAdmin: true,
 };

@@ -15,8 +15,8 @@ export const makeKeyRemover = <Key extends string | number | symbol>(
     };
 };
 
-const keyRemover = makeKeyRemover(["name"]);
+const keyRemover = makeKeyRemover(["name"])({ name: "Jane", id: 0, age: 58 });
 
-const res = keyRemover({ name: "Jane", id: 0, age: 58 });
+// const res = keyRemover({ name: "Jane", id: 0, age: 58 });
 
-console.log(res); //result : { id: 0, age: 58 }
+console.log(keyRemover); //result : { id: 0, age: 58 }

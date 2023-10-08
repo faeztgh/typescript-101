@@ -6,7 +6,7 @@ interface IDynamic<T> {
 }
 ```
 
-This piece of code declares a `IDynamic` generic interface in Typescript. This interface allows for any arbitrary property (with names being a type of string) to be added to an object. The key value can be of any type that you provide as the generic (`T`). This essentialy ensures that this interface can be used for creating an object which can have dynamic properties.
+This piece of code declares a `IDynamic` generic interface in Typescript. This interface allows for any arbitrary property (with names being a type of string) to be added to an object. The key value can be of any type that you provide as the generic (`T`). This essentially ensures that this interface can be used for creating an object which can have dynamic properties.
 
 ## Create an object `person`
 

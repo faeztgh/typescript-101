@@ -9,6 +9,7 @@ const socials = {
 } as const;
 
 type SocialTypes = typeof socials;
+type SocialValues = SocialTypes[keyof typeof socials];
 
 const facebook = socials.facebook;
 
@@ -18,9 +19,20 @@ const facebook = socials.facebook;
  * @param {SocialTypes[keyof SocialTypes]} input - The input value.
  * @return {string} The generated social name.
  */
-const getSocialName = (input: SocialTypes[keyof SocialTypes]) => {
-    return input.split("//")[1].split(".")[0];
+const getSocialName = (
+    input: SocialTypes[keyof SocialTypes]
+): keyof SocialTypes | undefined => {
+    return (Object.keys(socials) as (keyof SocialTypes)[]).find((key) => {
+        return socials[key] === input;
+    });
 };
 
 console.log(getSocialName(socials.google)); // google
 console.log(getSocialName(socials.facebook)); // facebook
+
+const getSocialValue = (input: keyof SocialTypes): SocialValues => {
+    return socials[input];
+};
+
+console.log(getSocialValue("google"));
+console.log(getSocialValue("facebook"));
