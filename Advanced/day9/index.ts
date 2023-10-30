@@ -27,12 +27,13 @@ const getSocialName = (
     });
 };
 
-console.log(getSocialName(socials.google)); // google
+console.log(getSocialName("https://facebook.com")); // google
 console.log(getSocialName(socials.facebook)); // facebook
 
 const getSocialValue = (input: keyof SocialTypes): SocialValues => {
     return socials[input];
 };
 
-console.log(getSocialValue("google"));
 console.log(getSocialValue("facebook"));
+console.log(getSocialValue("facebook"));
+
