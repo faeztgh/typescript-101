@@ -16,6 +16,7 @@
         "noImplicitReturns": true,
         "noFallthroughCasesInSwitch": true,
         "noImplicitThis": true,
+        "jsx": "react"
 
     },
     "exclude": [

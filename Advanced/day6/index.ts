@@ -1,3 +1,5 @@
+/********************************  Infer ********************************/
+
 type ReturnTypeOf<T> = T extends (...args: any[]) => infer U ? U : any;
 
 // Using it with a function type
