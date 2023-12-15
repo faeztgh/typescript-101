@@ -9,6 +9,7 @@ type Shape = Circle | Triangle | Rectangle;
 /**
  * Calculates the area of a shape based on its kind.
  *
+ *
  * @param {Shape} shape - The shape object to calculate the area for.
  * @return {number} The calculated area of the shape.
  */
